@@ -1,0 +1,208 @@
+/* Reset brouser Css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/* Reset brouser Css */
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+div.content {
+    display:flex;
+    flex-wrap:wrap;
+
+    max-width:1150px;
+    margin:0 auto;
+    border: 8px solid #ff7068;
+    border-radius: 7px;
+
+    margin-bottom:40px;
+}
+
+div.content > div.on-top, div.content > div.on-top:nth-child(2n), div.content div.item > div:nth-child(2n), div.content div.item > div {
+    width: 25%;
+}
+
+div.content > div.on-top:nth-child(3n), div.content div.item > div:nth-child(3n) {
+    width:50%;
+}
+
+div.content div.on-top {
+    position:relative;
+
+    font-size: 1.33em;
+    font-weight: bold;
+}
+
+.on-top:after {
+    content: "";
+
+    position:absolute;
+    top:26px;
+    left:0;
+
+    height:2px;
+    background-color:#ff7068;
+    /* #ffcd01 */
+    width:23%;
+}
+
+
+div.content div.on-top:nth-child(3n):after {
+    width:237px;
+}
+
+div.content ul li {
+    margin-bottom:6px;
+    list-style:none;
+    position:relative;
+}
+
+div.content ul li:before {
+    content:"\2022";
+    font-size:25px;
+
+    color:#FF4238;
+    position:absolute;
+    left:-15px;
+    top:-2px;
+}
+
+div.content div ul {
+    padding-left:18px;
+}
+
+div.content div {
+    font-size: 1.1em;
+}
+
+div.content div.item {
+    display:flex;
+    width:100%;
+
+    border-bottom:1px solid #E7E7E7;
+    padding:25px 30px 25px 30px;
+}
+
+div.content div.item.top{
+    border:0;
+    padding-bottom:10px;
+    padding-top:0px;
+
+}
+
+div.content div.item.top > div{
+    padding-left:0px;
+    padding-right:0px;
+}
+
+div.content div.item > div {
+    padding-left:5px;
+    padding-right:5px;
+}
+
+div.content h2 {
+    text-align: center;
+    width:100%;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top:35px;
+    margin-bottom:35px;
+}
+
+div.content div.item .sub-date {
+    margin-top:15px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+
+h1 span {
+    color: #FF0000;
+}
+
+@media screen and (max-width:800px) {
+    div.content div {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:680px) {
+    div.content {
+        margin-bottom:0px;
+    }
+
+    div.content div.item {
+        flex-direction: column;
+        width:100%;
+    }
+
+    div.content div.item > div:nth-child(2n), div.content div.item > div, div.content div.item > div:nth-child(3n) {
+        width: 100%;
+    }
+
+
+    div.content div.item.top {
+        display:none;
+    }
+
+    div.item > div {
+        margin-bottom:7px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    div.content div {
+        font-size:0.97em;
+    }
+
+    div.content div.item {
+        padding: 25px 10px 25px 10px;
+    }
+}
