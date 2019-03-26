@@ -81,11 +81,6 @@ header {
     border-bottom-right-radius: 3px;
 }
 
-
-.search button:active {
-    background-color:red;
-}
-
 .cafe {
     font-family: Arial, Helvetica, sans-serif;
 }
